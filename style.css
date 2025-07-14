@@ -1,42 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 30px;
-  background-color: #f4f4f4;
+  font-family: 'Roboto Mono', monospace;
+  background: #f5f7fa;
+  color: #2e2e2e;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
 }
 
 h2 {
-  color: #333;
+  margin-bottom: 20px;
+  color: whitesmoke;
+  font-size: 28px;
 }
 
 textarea {
-  width: 80%;
+  width: 90%;
+  max-width: 800px;
   height: 300px;
-  padding: 12px;
+  padding: 15px;
   font-size: 16px;
+  line-height: 1.5;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   resize: vertical;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  color:whitesmoke;
 }
 
 button {
-  padding: 10px 20px;
-  margin: 10px;
+  padding: 12px 24px;
+  margin: 15px 10px;
   font-size: 16px;
-  background-color: #007bff;
-  color: white;
+  background-color: #4f46e5;
+  color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: 0.3s ease;
+  
+}
+
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* space between buttons */
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #3730a3;
 }
 
 .status {
-  margin-top: 10px;
-  color: green;
+  margin-top: 15px;
   font-weight: bold;
+  color: #16a34a;
+  font-size: 14px;
 }
+
+@media screen and (max-width: 600px) {
+  textarea {
+    width: 95%;
+    height: 250px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+body {
+  background-color:black;
+  color: #f8f8f8;
+}
+
+textarea {
+  background-color: #252526;
+  color: #d4d4d4;
+  border: 1px solid #3c3c3c;
+}
+
+button {
+  background-color: #0e639c;
+}
+
+button:hover {
+  background-color: #1177bb;
+}
+
+.status {
+  color: #4ade80; /* green */
+}
+

@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>MyShare</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
 
   <!-- Firebase SDKs -->
   <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
@@ -13,8 +15,11 @@
   <h2>📝 MY SHARE</h2>
 
   <textarea id="editor" placeholder="Start typing..."></textarea><br>
-  <button onclick="saveText()">💾 Save</button>
-  <button onclick="loadText()">📥 Load</button>
+  <div class="button-group">
+  <button onclick="saveText()">Save</button>
+  <button onclick="loadText()"> Load</button>
+</div>
+
 
   <div class="status" id="statusMessage"></div>
 

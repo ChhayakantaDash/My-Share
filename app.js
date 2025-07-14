@@ -49,5 +49,5 @@ function loadText() {
 function showStatus(message) {
   const statusDiv = document.getElementById("statusMessage");
   statusDiv.textContent = message;
-  setTimeout(() => statusDiv.textContent = "", 3000);
+  setTimeout(() => statusDiv.textContent = "", 2000);
 }
