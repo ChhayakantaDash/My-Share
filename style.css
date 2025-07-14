@@ -102,3 +102,11 @@ button:hover {
   color: #4ade80; /* green */
 }
 
+button:nth-child(3) {
+  background-color: #10b981; /* green */
+}
+
+button:nth-child(3):hover {
+  background-color: #059669;
+}
+

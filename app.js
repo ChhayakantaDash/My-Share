@@ -51,3 +51,23 @@ function showStatus(message) {
   statusDiv.textContent = message;
   setTimeout(() => statusDiv.textContent = "", 2000);
 }
+
+function downloadText() {
+  const content = document.getElementById("editor").value;
+
+  // Create a Blob (file-like object)
+  const blob = new Blob([content], { type: 'text/plain' });
+
+  // Create a temporary link to trigger download
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = "my_text_file.txt";
+
+  // Trigger the download
+  link.click();
+
+  // Cleanup
+  URL.revokeObjectURL(link.href);
+  showStatus("📤 File downloaded!");
+}
+
