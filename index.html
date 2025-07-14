@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyShare</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <h2>📝 MY SHARE</h2>
+
+  <textarea id="editor" placeholder="Start typing..."></textarea><br>
+  <button onclick="saveText()">💾 Save</button>
+  <button onclick="loadText()">📥 Load</button>
+
+  <div class="status" id="statusMessage"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
